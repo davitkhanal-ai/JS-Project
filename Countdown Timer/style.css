@@ -1,82 +1,40 @@
-html {
+* > * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
-  font-size: 10px;
-  background: #8E24AA;
-  background: linear-gradient(45deg,  #42a5f5 0%,#478ed1 50%,#0d47a1 100%);
-}
-
-*, *:before, *:after {
-  box-sizing: inherit;
 }
 
 body {
-  margin: 0;
-  text-align: center;
-  font-family: 'Inconsolata', monospace;
+  font-family: "Ubuntu", sans-serif;
+  background-image: url(https://source.unsplash.com/rFKUFzjPYiQ/1500x1500);
+  background-size: cover;
+  background-position: center;
 }
 
-.display__time-left {
-  font-weight: 100;
-  font-size: 20rem;
-  margin: 0;
-  color: white;
-  text-shadow: 4px 4px 0 rgba(0,0,0,0.05);
+h2 {
+  color: rgb(167, 28, 144);
+  font-size: 5rem;
+  font-weight: bold;
+  padding: 3rem;
 }
 
-.timer {
-  display: flex;
+.coming-soon {
   min-height: 100vh;
-  flex-direction: column;
-}
-
-.timer__controls {
   display: flex;
-}
-
-.timer__controls > * {
-  flex: 1;
-}
-
-.timer__controls form {
-  flex: 1;
-  display: flex;
-}
-
-.timer__controls input {
-  flex: 1;
-  border: 0;
-  padding: 2rem;
-}
-
-.timer__button {
-  background: none;
-  border: 0;
-  cursor: pointer;
-  color: white;
-  font-size: 2rem;
-  text-transform: uppercase;
-  background: rgba(0,0,0,0.1);
-  border-bottom: 3px solid rgba(0,0,0,0.2);
-  border-right: 1px solid rgba(0,0,0,0.2);
-  padding: 1rem;
-  font-family: 'Inconsolata', monospace;
-}
-
-.timer__button:hover,
-.timer__button:focus {
-  background: rgba(0,0,0,0.2);
-  outline: 0;
-}
-
-.display {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
   align-items: center;
+  flex-direction: column;
   justify-content: center;
 }
 
-.display__end-time {
-  font-size: 4rem;
-  color: white;
+.countdown {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.day,
+.hour,
+.minute,
+.second {
+  font-size: 3rem;
 }

@@ -21,6 +21,8 @@ function checkSlide() {
     //halfway trought image
     const slideInAt =
       window.scrollY + window.innerHeight - sliderImage.height / 2;
+    console.log("scrollY", scrollY);
+    console.log("innerHeight", innerHeight);
 
     //bottom of image
     const imageBottom = sliderImage.offsetTop + sliderImage.height;
